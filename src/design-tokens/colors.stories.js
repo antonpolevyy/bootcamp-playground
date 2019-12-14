@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { cx, css } from 'emotion';
 import {Colors} from './colors';
+import {Fonts} from './fonts';
 
 const colorBox = css`
     display: inline-block;
@@ -18,6 +19,16 @@ const green = css`
 
 const grey = css`
     background-color: ${Colors.grey};
+`;
+
+const bluefont = css`
+    color: ${Colors.blue};
+`;
+const greenfont = css`
+    color: ${Colors.green};
+`;
+const greyfont = css`
+    color: ${Colors.grey};
 `;
 
 storiesOf('Design tokens', module)
