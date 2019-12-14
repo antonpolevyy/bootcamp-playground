@@ -12,14 +12,24 @@ const blue = css`
     background-color: ${Colors.blue};
 `;
 
+const green = css`
+    background-color: ${Colors.green};
+`;
+
+const grey = css`
+    background-color: ${Colors.grey};
+`;
+
 storiesOf('Design tokens', module)
   .add('Colors', () => 
       <div>
         <h1>Colors</h1>
           <h2>Description</h2>
-          <p>This is color doc....</p>
+          <p>Primary colors for this application:</p>
           <ul>
               <li><span className={cx(colorBox, blue)} /> Blue</li>
+              <li><span className={cx(colorBox, green)} /> Green</li>
+              <li><span className={cx(colorBox, grey)} /> Grey</li>
           </ul>
       </div>
     )
