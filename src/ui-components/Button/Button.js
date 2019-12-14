@@ -1,16 +1,18 @@
 import React from 'react';
 import { cx, css } from 'emotion';
-import {Colors} from '../../design-tokens/colors';
+import { Colors } from '../../design-tokens/colors';
+import { Fonts } from '../../design-tokens/fonts';
+import { Fontweights } from '../../design-tokens/fontsweights';
 
-const buttonStyle = css`  
-  /* background-color: #4CAF50; Green */
-  background-color: ${Colors.blue};
+
+const buttonStyle = css`
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: ${Fonts.bodyfont1};
   font-size: 16px;
 `;
 
@@ -19,11 +21,13 @@ const defaultColor = css`
 `;
 
 const submitColor = css`
-  background-color: #4CAF50; /* Green */
+  background-color: ${Colors.green};
 `;
 
 const cancelColor = css`
-  background-color: lightgray;
+  background-color: ${Colors.grey};
+  font-weight: ${Fontweights.fontweighting3};
+  color: black;
 `;
 
 export default function Button({ onClickFunction, buttonName, buttonType }) {
